@@ -10,12 +10,172 @@
     <title>Primer portafolio WEB</title>
 </head>
 <body>
-    <h1>Titulo de la página</h1>
-    <a href="#" class="fab fa-instagram"></a>
-    <a href="#" class="fab fa-facebook-f"></a>
-    <a href="#" class="fab fa-whatsapp"></a>
-    <a href="#" class="fab fa-twitter"></a>
+    <header class="encabezado">
+        <div class="contenedor">
+            <nav class="nav">
+                <a href="#" class="nav__item nav__item--cta">Contactame</a> <!-- cta = click to action -->
+                <a href="#" class="nav__item">Sobre mi</a>
+                <a href="#" class="nav__item">Proyectos</a>
+            </nav>
 
+            <section class="encabezado__contenedor">
+                <div class="contenedor__texto">
+                    <h1 class="encabezado__titulo">Hola soy Saúl Suaste [Frontend developer]</h1>
+                    <h2 class="encabezado__subtitulo">Transformando ideas a realidades</h2>
+                    <a href="" class="encabezado__cta">Contactame</a>
+
+                </div>
+            </section>
+
+        </div>
+        <!-- Onda del header -->
+        <div class="encabezado__wave" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,50.20 C149.83,150.67 348.82,-50.20 499.43,50.20 L499.43,150.67 L-0.00,150.67 Z" style="stroke: none; fill: #08f;"></path></svg></div>
+    </header>
+
+    <main>
+        <section class="presentacion container">
+            <img src="imagenes/foto.jpg" alt="" class="presentacion__foto">
+            <h2 class="subtitulo">Mi nombre es: Saúl Suaste</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt explicabo quam, a pariatur reprehenderit iste sint molestiae maxime. Nihil consectetur id laudantium quisquam et optio sequi assumenda aut laboriosam.</p>
+            <a href="#" class="presentacion__cta">Contactame</a>
+        </section>
+
+        <section class="about container">
+            <div class="about__texto">
+                <h2 class="subtitulo">Mis habilidades</h2>
+                <p class="about__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate dolor, et iure voluptates nisi numquam. Ratione eligendi ab vero repellendus asperiores commodi veniam, illum porro, aspernatur exercitationem eius vel!</p>
+                <p class="about__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate dolor, et iure voluptates nisi numquam. Ratione eligendi ab vero repellendus asperiores commodi veniam, illum porro, aspernatur exercitationem eius vel!</p>
+            </div>
+            <figure class="about__imagen">
+                <img src="imagenes/programador.svg" alt="" class="about__img">
+            </figure>
+<!-- Segunda imagen -->
+            <figure class="about__imagen--left">
+                <img src="imagenes/programador.svg" alt="" class="about__img">
+            </figure>
+            <div class="about__texto">
+                <h2 class="subtitulo">Sobre mi trabajo</h2>
+                <p class="about__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate dolor, et iure voluptates nisi numquam. Ratione eligendi ab vero repellendus asperiores commodi veniam, illum porro, aspernatur exercitationem eius vel!</p>
+                <p class="about__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab voluptate dolor, et iure voluptates nisi numquam. Ratione eligendi ab vero repellendus asperiores commodi veniam, illum porro, aspernatur exercitationem eius vel!</p>
+            </div>
+
+        </section>
+
+        <section class="proyectos">
+            <div class="contenedor">
+                <h2 class="subtitulo">Mis proyectos</h2>
+                <div class="proyectos__grid">
+                    <article class="proyectos__item">
+                        <img src="imagenes/proyecto1.jpg" alt="" class="proyecto__img">
+                        <div class="proyectos__hover">
+                            <h2 class="proyecto__titulo">Proyecto</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="proyectos__item">
+                        <img src="imagenes/proyecto2.jpg" alt="" class="proyecto__img">
+                        <div class="proyectos__hover">
+                            <h2 class="proyecto__titulo">Proyecto</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="proyectos__item">
+                        <img src="imagenes/proyecto3.jpg" alt="" class="proyecto__img">
+                        <div class="proyectos__hover">
+                            <h2 class="proyecto__titulo">Proyecto</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="proyectos__item">
+                        <img src="imagenes/proyecto4.jpg" alt="" class="proyecto__img">
+                        <div class="proyectos__hover">
+                            <h2 class="proyecto__titulo">Proyecto</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+
+                    <article class="proyectos__item">
+                        <img src="imagenes/proyecto5.jpg" alt="" class="proyecto__img">
+                        <div class="proyectos__hover">
+                            <h2 class="proyecto__titulo">Proyecto</h2>
+                            <i class="far fa-file-alt projects__icon"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonios contenedor">
+            <h2 class="subtitulo">¿Que dicen de nosotros?</h2>
+
+            <div class="testimonios__grid">
+                <article class="testimonio__item">
+                    <div class="testimonio__persona">
+                        <img src="imagenes/hombre1.jpg" alt="Persona 1" class="testimonio__img">
+                        <div class="testimonio__texto">
+                            <h3 class="testimonio__nombre">Yo soy Dalto</h3>
+                            <p class="testimonio__verificacion">Desarrollador WEB</p>
+                        </div>
+                    </div>
+                    <p class="testimonio__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corporis veritatis ratione atque sint hic saepe iure magnam, quis natus? Ipsum necessitatibus, autem dolorum eum beatae corporis commodi pariatur fugit?</p>
+                </article>
+
+                <article class="testimonio__item">
+                    <div class="testimonio__persona">
+                        <img src="imagenes/hombre2.jpg" alt="Persona 1" class="testimonio__img">
+                        <div class="testimonio__texto">
+                            <h3 class="testimonio__nombre">Codigo Facilito</h3>
+                            <p class="testimonio__verificacion">Programador Sr, y creador de contenido</p>
+                        </div>
+                    </div>
+                    <p class="testimonio__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corporis veritatis ratione atque sint hic saepe iure magnam, quis natus? Ipsum necessitatibus, autem dolorum eum beatae corporis commodi pariatur fugit?</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <nav class="nav nav--footer">
+                <a href="#" class="nav__items nav__item--footer">Inicio</a>
+                <a href="#" class="nav__items nav__item--footer">Sobre mi</a>
+                <a href="#" class="nav__items nav__item--footer">Mis skilld</a>
+                <a href="#" class="nav__items nav__item--footer">Proyectos</a>
+            </nav>
+
+            <section class="footer__contacto">
+                <h3 class="footer__titulo">Contactame</h3>
+                <div class="footer__iconos">
+                    <span class="footer__contenedor-icono">
+                        <a href="#" class="fab fa-instagram"></a>
+                    </span>
+
+                    <span class="footer__contenedor-icono">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                    </span>
+
+                    <span class="footer__contenedor-icono">
+                        <a href="#" class="fab fa-whatsapp"></a>
+                    </span>
+
+                    <span class="footer__contenedor-icono">
+                        <a href="#" class="fab fa-twitter"></a>
+                    </span>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <i class="fab fa-python"></i>
+    <i class="fas fa-server"></i>
 
 
 
