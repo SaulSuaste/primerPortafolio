@@ -1,7 +1,101 @@
 /* Se importa desde google Fonts el enlace */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
-
+:root{
+    --background: linear-gradient(135deg, rgba(255, 0, 0, 0.686) 0%, rgba(201, 0, 0, 0.522) 100%);
+    --color-primario: red;
+    --color-secundario: blue;
+    --boton-padding: 20px 40px;
+}
 body{
     font-family: 'Raleway', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+.subtitulo{
+    color: var(--color-primario);
+    font-size: 2.5rem;
+    margin-bottom: 35px
+}
+
+/**************************************************************************************************************/
+/********************************************** Encabezado ****************************************************/
+/**************************************************************************************************************/
+
+.encabezado{
+    height: 100vh;
+    background-image: var(--background), url(../imagenes/portada1.jpg);
+    background-repeat: no-repeat; /*se puede repetir el fondo en el eje x o y, o no repetir*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative; /*para que el wave se pueda mover*/
+}
+.encabezado .contenedor{
+    padding: 0;/*se especifica qeu quitara el padding solo del contenedor del encabezado*/
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+.nav__item{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+}
+
+.nav__item--cta{
+    border: 1px solid #fff;
+}
+.nav__item--footer{
+    padding: 10px;
+}
+
+.encabezado__contenedor{
+    display: flex;
+    height: calc(100vh - 250px); 
+    align-items: center;
+    color: #fff;
+}
+
+.contenedor__texto{
+    width: 80%;
+    margin-bottom: 50px;
+}
+.encabezado__titulo{
+    font-size: 3.2rem;
+}
+.encabezado__subtitulo{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.encabezado__cta{
+    display: inline-block;
+    background: #fff;
+    padding: var(--boton-padding);
+    text-decoration: none;
+    border-radius: 40px;
+}
+.encabezado__wave{
+    position: absolute; /*para que este dentro del contenedor*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
 }
