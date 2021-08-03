@@ -29,7 +29,7 @@ body{
 
 .encabezado{
     height: 100vh;
-    background-image: var(--background), url(../imagenes/portada1.jpg);
+    background-image: var(--background), url(../imagenes/portada4.jpg);
     background-repeat: no-repeat; /*se puede repetir el fondo en el eje x o y, o no repetir*/
     background-size: cover;
     background-attachment: fixed;
