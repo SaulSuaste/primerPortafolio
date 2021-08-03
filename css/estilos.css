@@ -154,4 +154,79 @@ body{
 /********************************************** Proyectos ****************************************************/
 /**************************************************************************************************************/
 
+.proyectos{
+    background: #f2f2f2;
+}
+
+.proyectos__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px; /*espacio entre todas las celdas*/
+}
+
+.proyectos__item{
+    position: relative; /*para que puedan ser superpuestas por el hover*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.proyecto__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+/* Se asignan los espacions a cada etiqueta de grid area */
+.proyectos__item:nth-of-type(1){
+    grid-area: img1;
+}
+.proyectos__item:nth-of-type(2){
+    grid-area: img2;
+}
+.proyectos__item:nth-of-type(3){
+    grid-area: img3;
+}
+.proyectos__item:nth-of-type(4){
+    grid-area: img4;
+}
+.proyectos__item:nth-of-type(5){
+    grid-area: img5;
+}
+
+
+.proyectos__hover{
+    position: absolute; /*Para poder ponerlo adelante de los items*/
+    background: #dc143c8c;
+    top: 0; /*posicionarlo en el contenedor*/
+    left: 0;
+    width: 100%; /*abarque todo el contenedor*/
+    height: 100%;
+    color: #fff;
+    display: flex; /*para poder acomodar titulo e icono*/
+    flex-direction: column;
+    justify-content: center;/*por que se esta trabajando con columnas*/
+    align-items: center;
+    transform: translateX(100%);/*moverlo de la celda y no se vea*/
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+/*al poner el curson en proyedtos__item, debe afectar a proyectos__hover*/
+.proyectos__item:hover .proyectos__hover{
+    transform: translateX(0);
+}
+
+.projects__icon{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/**************************************************************************************************************/
+/********************************************** Proyectos ****************************************************/
+/**************************************************************************************************************/
+
+
 
